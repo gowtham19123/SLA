@@ -1,0 +1,35 @@
+1.What is HTML?
+   
+HTML stands for HyperText Markup Language, HTML is  a markup language.
+
+HyperText: Refers to the links (hyperlinks) that connect web pages to one another.
+
+Markup Language: set of tags to tell a web browser how to display text, images, and buttons.  
+
+History of HTML
+ 
+1991 – HTML1.0: Basic document structure.
+
+1995 - HTML2.0: Standardized version.
+ 
+1997 - HTML3.2: Tables, scripts.
+
+1999 - HTML4.01: Stylesheets and better structure
+
+2014 - HTML5    :Video, audio, standard for modern websites.
+
+why is it used?
+     
+   HTML is used because it provides the structure of a webpage.
+  
+             HTML → Structure (walls, rooms)
+
+             CSS → Design (colors, styles)
+
+             JavaScript → Functionality (interactions)
+   
+   
+                     
+
+          
+     
