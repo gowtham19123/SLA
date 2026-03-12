@@ -1,0 +1,17 @@
+Semantic 
+
+tags are Self Explaining itself ,improveing SEO and accessibility,purpose to browsers, developers, and search engines
+
+HTML tags (<article>, <nav>, <header>,<footer>,<main>,<aside>) 
+
+Non-Semantic
+
+These tags do not convey any information,acting as containers for layout, styling, or positioning purposes.
+
+HTML tags (<div>,<span>,<i>,<b>,<p>,<a>..)
+
+
+
+
+
+
