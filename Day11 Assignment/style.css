@@ -1,0 +1,51 @@
+#menu{
+    display:flex;
+    gap: 20px;
+    list-style: none;
+    background-color:royalblue;
+    height: 21px;
+    align-items: center;
+    
+}
+.nav{
+    text-decoration: none; 
+    color:white ;  
+}
+a:hover{
+    background-color: blue;
+}
+#current:link
+{
+    background-color:blue;
+}
+body{
+    font-family: 'Times New Roman';
+    font-size: larger;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse ;
+    text-align: center;
+    padding: 20px;
+   
+}
+form{
+    background-color: bisque;
+  width: 550px;
+   height: 350px;
+  
+   padding: 30px;
+   text-align: center;
+}
+#forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+main,header{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
