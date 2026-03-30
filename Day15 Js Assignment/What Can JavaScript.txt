@@ -1,0 +1,19 @@
+What Can JavaScript ?
+
+JavaScript is the programming language of the web.
+It can calculate, manipulate and validate data.
+It can update and change both HTML and CSS.
+
+simple script.
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do</h2>
+
+<p id="simple">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("simple").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+</body>
+</html>
