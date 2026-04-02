@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header,h3{
+        text-align: center;
+    }
+    #boat,ul{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        justify-content: center;
+    }
+
+</style>
+
+<body>
+    <header>  Travelling on a Boat </header>
+    <div id=" boat">
+        <h3> Ask The Destination</h3>
+        <ul>
+           <li> <button onclick="jack()">  JackSparrow</button></li>
+           <li> <button onclick="sam()">  Sam</button></li>
+           <li> <button onclick="richard()">  Richard</button></li>
+           <li> <button onclick="Gemma()">  Gemma</button></li>          
+       </ul>
+       <h3 id="display"> </h3>
+    </div>
+    
+    <script>
+        function jack(){
+       document.getElementById('display').innerHTML=" Don't Change Directions";
+        }
+        function sam(){
+       document.getElementById('display').innerHTML=" Move to the North-west";
+        }
+        function richard(){
+       document.getElementById('display').innerHTML=" You can See the National flag";
+        }
+        function Gemma(){
+       document.getElementById('display').innerHTML=" We Reached Magic Home";
+        }
+ 
+       </script>
+</body>
+</html>
