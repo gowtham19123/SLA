@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChangeText</title>
+  </head>
+  <h1 id="text">Welcome</h1>
+  <p id="para">Para to Change</p>
+
+  <button onclick="changetext()">Change Text</button>
+  <body>
+    <script>
+      function changetext() {
+        let display = document.getElementById("text");
+        display.textContent = "Day23 Js Task";
+        display.style.color = "blue";
+        let p = document.getElementById("para");
+        p.textContent =
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque laboriosam ducimus adipisci quod illum at ex temporibus ";
+       p.style.backgroundColor="yellow";
+        }
+
+    </script>
+  </body>
+</html>
