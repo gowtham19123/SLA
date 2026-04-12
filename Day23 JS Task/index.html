@@ -12,13 +12,16 @@
   <body>
     <script>
       function changetext() {
-        let display = document.getElementById("text");
+        let display = document.getElementById('text');
         display.textContent = "Day23 Js Task";
+        display.style.display = "flex";
+        display.style.justifyContent = "center";
         display.style.color = "blue";
-        let p = document.getElementById("para");
-        p.textContent =
-          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque laboriosam ducimus adipisci quod illum at ex temporibus ";
-       p.style.backgroundColor="yellow";
+        let p = document.getElementById('para');
+       p.textContent = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque laboriosam ducimus adipisci quod illum at ex temporibus ";   
+       p.style.fontSize = "2rem";
+       p.style.color = "gray";
+       p.style.margin =" 0  5rem";
         }
 
     </script>
