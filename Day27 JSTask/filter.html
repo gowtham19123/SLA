@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <style>
+         .gallery { display: flex; gap: 20px; flex-wrap: wrap; padding: 20px; }
+  .card { 
+    width: 200px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  }
+  .card img { width: 100%; height: 250px; object-fit: cover; }
+  .card h3 { padding: 10px; font-size: 1.1rem; text-align: center; }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> The Matrix </li>
+        <li> Interstaller</li>
+        <li> No Way Home </li>
+        <li> Iron Man </li>
+    </ul>
+    <input type="text" placeholder="Search">
+    <p></p>
+   <div id="movieGallery" class="gallery"></div>
+</body>
+<script>
+    let input =  document.querySelector('input');
+    let display= document.querySelector('p');
+     
+    input.addEventListener("input",(e) => {
+        let input_value = e.target.value.toLowerCase();
+        let list =[...document.querySelectorAll('li')];
+        let search = list.filter( item => item.textContent.toLowerCase().includes(input_value));
+
+        if(input_value && search.length > 0){
+            display.innerHTML=search.map(m => m.textContent).join("<br>");
+        }
+       else{
+        display.textContent =input ? input_value : ""; 
+       }
+    });
+    
+
+    const movies = [
+  { name: "No Way Home", img: "/images/small.jpg" },
+  { name: "The Matrix", img: "/images/7640.jpg" },
+  { name: "Interstellar", img: "/images/11251.jpg "}
+];
+
+const gallery = document.getElementById('movieGallery');
+
+movies.forEach(movie => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+    <img src="${movie.img}" alt="${movie.name}">
+    <h3>${movie.name}</h3>
+  `;
+  gallery.appendChild(card);
+});
+
+     
+    
+</script>
+</html>
