@@ -24,6 +24,7 @@ function shop(){
 
      function feedback(){
          return new Promise((resolve,reject) => {
+      setTimeout( ()=>{
         let food = true;
         if(food){
         resolve(" Excellent ");
@@ -31,6 +32,7 @@ function shop(){
         else{
             reject("Poor");
         }
+      },2000);
     });
 }
 
