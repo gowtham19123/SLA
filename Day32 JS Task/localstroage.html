@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local-session</title>
+    <button onclick="local()"> Click </button>
+
+</head>
+<body>
+    <script>
+        function local(){
+            localStorage.setItem("Name","Gowtham");
+            sessionStorage.removeItem("Name","Gowtham");
+            
+        }
+    </script>
+</body>
+</html>
